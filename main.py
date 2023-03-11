@@ -52,4 +52,12 @@ def printTable(variableList,expressionList):
     pass
 
 
-printTable(["a","b"],[])
+nPremises = int(input("How many premises (2-3)? "))
+while nPremises != 2 and nPremises != 3:
+    print("Incorrect value")
+    nPremises = int(input("How many premises (2-3)? "))
+
+if nPremises == 2:
+    printTable(["a","b"],[])
+else:
+    printTable(["a", "b", "c"], [])
