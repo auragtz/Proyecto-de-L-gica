@@ -4,7 +4,7 @@ import pandas as pd
 final_premises = pd.DataFrame()
 
 nVariable = int(input("How many variables? "))
-nPremises = int(input("How many variables (2-3)? note: don't count conclusion as a premise "))
+nPremises = int(input("How many premises (2-3)? note: don't count conclusion as a premise "))
 
 for i in range(nPremises):
     print(f"Editing premise {i+1}")
