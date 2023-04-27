@@ -48,7 +48,11 @@ conclusion = pd.DataFrame(VarConclusion)
 
 # operations
 df['P AND Q'] = df['P'] & df['Q']
+
+# obtain final column
 final_column = pd.DataFrame(df.iloc[:, -1])
+
+# concat final column to dataframe final_premise
 final_premises = pd.concat([final_premises, final_column], axis=1)
 
 df['(P AND Q) AND R'] = df['P AND Q'] & df['R']
